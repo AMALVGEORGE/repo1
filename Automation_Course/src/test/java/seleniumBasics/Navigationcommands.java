@@ -1,6 +1,9 @@
 package seleniumBasics;
 
+import org.openqa.selenium.WebDriver;
+
 public class Navigationcommands extends Base {
+	public WebDriver driver;
 	
 	public void verityNavigationCommands()
 	{

@@ -1,8 +1,10 @@
 package seleniumBasics;
 
+import org.openqa.selenium.WebDriver;
 
 public class HandlingBrowserCommand extends Base
 {
+	public WebDriver driver;
 public void verifybrowsercommand()
 {
 	System.out.println(driver.getTitle());
