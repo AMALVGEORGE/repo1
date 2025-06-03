@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-03T10:46:27 IST" name="Default suite" finished-at="2025-06-03T10:46:42 IST" duration-ms="14424">
+    <groups>
+    </groups>
+    <test started-at="2025-06-03T10:46:27 IST" name="Default test" finished-at="2025-06-03T10:46:42 IST" duration-ms="14424">
+      <class name="testScript.LoginMartTest">
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testScript.LoginMartTest@6743e411]" started-at="2025-06-03T10:46:28 IST" name="initialiseBrowser" finished-at="2025-06-03T10:46:35 IST" duration-ms="7438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="validateWithInvalidCredentials()[pri:0, instance:testScript.LoginMartTest@6743e411]" started-at="2025-06-03T10:46:35 IST" name="validateWithInvalidCredentials" finished-at="2025-06-03T10:46:41 IST" duration-ms="6027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateWithInvalidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testScript.LoginMartTest@6743e411]" started-at="2025-06-03T10:46:41 IST" name="closeBrowser" finished-at="2025-06-03T10:46:42 IST" duration-ms="627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testScript.LoginMartTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

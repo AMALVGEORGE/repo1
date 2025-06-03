@@ -10,7 +10,7 @@ public WebDriver driver;
 public LoginPage(WebDriver driver)
 {
 	this.driver=driver;
-	PageFactory.initElements(driver, this); //initalise web elements
+	PageFactory.initElements(driver, this); //initialise web elements
 }
 @FindBy(id="user-name")private WebElement usernamefield;
 @FindBy(id="password")private WebElement passwordfield;
