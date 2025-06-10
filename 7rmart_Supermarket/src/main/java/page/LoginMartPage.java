@@ -17,6 +17,7 @@ public class LoginMartPage {
 	@FindBy(name="username")private WebElement usernamefield;
 	@FindBy(name="password")private WebElement passwordfield;
 	@FindBy(xpath="//*[@id=\"login-form\"]/div/div/div[3]/div[2]/button")private WebElement signinbutton;
+	@FindBy(xpath="//p[text()='dashboard']")private WebElement dashboard;
 	
 	public void enterUsernameonField(String username)
 	{
@@ -29,5 +30,10 @@ public class LoginMartPage {
 	public void signinButton()
 	{
 		signinbutton.click();
+	}
+	
+	public String dashboardDisplayed()
+	{
+		return(dashboard.getText());
 	}
 }

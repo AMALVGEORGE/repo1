@@ -8,6 +8,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import constants.Constant;
+
 public class ExcelData {
 
 	static FileInputStream f;
@@ -17,7 +19,7 @@ public class ExcelData {
 	public static String getstring(int a, int b, String sheet)throws IOException
 
 	{
-		f=new FileInputStream ("C:\\Users\\amal4\\eclipse-workspace\\7rmart_Supermarket\\src\\test\\resources\\TestLoginData.xlsx");
+		f=new FileInputStream (Constant.TESTLOGINDATAFILE);
 		w=new XSSFWorkbook(f);
 		s=w.getSheet(sheet);
 		XSSFRow r;
@@ -30,7 +32,7 @@ public class ExcelData {
 	public static String getInteger(int a, int b, String sheet)throws IOException
 
 	{
-		f=new FileInputStream ("C:\\Users\\amal4\\eclipse-workspace\\7rmart_Supermarket\\src\\test\\resources\\TestLoginData.xlsx");
+		f=new FileInputStream (Constant.TESTLOGINDATAFILE);
 		w=new XSSFWorkbook(f);
 		s=w.getSheet(sheet);
 		XSSFRow r;

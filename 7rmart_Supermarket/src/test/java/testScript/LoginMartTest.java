@@ -2,6 +2,7 @@ package testScript;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import page.LoginMartPage;
@@ -13,7 +14,7 @@ public class LoginMartTest extends BaseTestMart{
 	
 	public void validateWithValidCredentials() throws IOException
 	{
-		String username = ExcelData.getstring(0,0,"login_sheet");
+		String username = ExcelData.getstring(10,0,"login_sheet");
 		String password = ExcelData.getstring(0,1,"login_sheet");
 		LoginMartPage login = new LoginMartPage(driver);
 		login.enterUsernameonField(username);
@@ -30,6 +31,11 @@ public void validateWithValidUsernameandInvalidPassword() throws IOException
 	login.enterUsernameonField(username);
 	login.enterPasswordonField(password);
 	login.signinButton();
+	//boolean isdashboarddisplayed = login.dashboardDisplayed();
+	//Assert.assertTrue(isdashboarddisplayed,"User not able to login");
+	String actual=login.dashboardDisplayed();
+	String expected = "Dashboard";
+	Assert.assertEquals(actual, expected,"User unable to login");
 	
 }
 @Test
